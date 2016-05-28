@@ -12,18 +12,31 @@ var muiTheme = getMuiTheme({
     },
 });
 
-export default class DataTable extends React.Component({
-    render: function() {
+export default class DataTable extends React.Component {
+    constructor() {
+        var savedItems;
+        if ( localStorage.items == undefined ) {
+            savedItems = []
+        } else {
+            savedItems = JSON.parse(localStorage.items);
+        }
+
+        this.state = {
+            items: savedItems
+        };
+    }
+
+    render() {
         return (
             <div>
                 <MuiThemeProvider muiTheme={muiTheme}>
                     <div>
                         <TopBar />
-                        <TableContent />
+                        <TableContent items={this.state.items}/>
                         <FootorBar />
                     </div>
                 </MuiThemeProvider>
             </div>
         );
     }
-});
+};
