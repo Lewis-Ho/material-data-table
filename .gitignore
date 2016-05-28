@@ -1,0 +1,5 @@
+# Dependency directory
+node_modules
+
+# DS_Store should not be included
+.DS_Store
