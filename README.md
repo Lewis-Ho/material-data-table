@@ -10,7 +10,7 @@ npm install
 
 To install required dependencies
 
-## Run on on server
+## Run on local server
 
 ```
 npm run server
