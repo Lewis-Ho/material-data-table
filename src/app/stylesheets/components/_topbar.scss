@@ -1,0 +1,35 @@
+// Primary font for text
+$primaryFont: 'Roboto', sans-serif;
+
+// Screen size for xs
+$xsScreen: 320px;
+
+// Top bar container styling
+.top-bar-container {
+	padding: 0px 24px;
+
+	@media screen and (max-width: $xsScreen) {
+		padding: 0px 5px 0px 24px;
+	}
+}
+
+// Top bar title font styling
+.top-bar-title {
+	font-family: $primaryFont;
+	font-size: 20px;
+	padding: 20px 0 20px 0;
+
+	@media screen and (max-width: $xsScreen) {
+		padding: 15px 0 20px 0;
+	}
+}
+
+// Top bar action button always on the right
+.top-bar-buttons {
+	float: right;
+}
+
+// Change background as blue when selected item
+.blue-back {
+	background-color: rgba(0, 71, 187, 0.12);
+}

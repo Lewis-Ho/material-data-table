@@ -1,0 +1,56 @@
+.top-bar-container {
+  padding: 0px 24px; }
+  @media screen and (max-width: 320px) {
+    .top-bar-container {
+      padding: 0px 5px 0px 24px; } }
+
+.top-bar-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  padding: 20px 0 20px 0; }
+  @media screen and (max-width: 320px) {
+    .top-bar-title {
+      padding: 15px 0 20px 0; } }
+
+.top-bar-buttons {
+  float: right; }
+
+.blue-back {
+  background-color: rgba(0, 71, 187, 0.12); }
+
+@media screen and (max-width: 320px) {
+  .table {
+    overflow-x: visible !important;
+    width: 1024px !important; } }
+@media screen and (min-width: 321px) {
+  .table {
+    width: 100%; } }
+
+@media screen and (max-width: 320px) {
+  #app > div > div > div:nth-child(2) > div:nth-child(2) {
+    overflow-x: visible !important;
+    overflow-y: visible !important;
+    width: auto !important; } }
+@media screen and (min-width: 320px 321px) {
+  #app > div > div > div:nth-child(2) > div:nth-child(2) {
+    width: 100%; } }
+
+.change-title-btn {
+  float: right; }
+
+.table-body {
+  padding: 20px 0 20px 0; }
+
+.footer-container {
+  text-align: right;
+  font-family: "Roboto", sans-serif;
+  color: rgba(0, 0, 0, 0.54); }
+  @media screen and (max-width: 320px) {
+    .footer-container {
+      padding: 8px;
+      font-size: 14px; } }
+  @media screen and (min-width: 321px) {
+    .footer-container {
+      font-size: 15px; } }
+
+/*# sourceMappingURL=main.css.map */

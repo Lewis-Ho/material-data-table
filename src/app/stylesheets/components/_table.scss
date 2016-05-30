@@ -1,0 +1,29 @@
+$xsScreen: 320px;
+
+// Overwrite material-ui table styling
+.table {
+	@media screen and (max-width: $xsScreen) {
+		overflow-x: visible !important;
+		width: 1024px !important;
+	}
+	@media screen and (min-width: $xsScreen + 1px) {
+		width: 100%;
+	}
+}
+
+// Overwrite material-ui table wrapper styling, prevent overflowX hidden
+#app > div > div > div:nth-child(2) > div:nth-child(2) {
+	@media screen and (max-width: $xsScreen) {
+		overflow-x: visible !important;
+		overflow-y: visible !important;
+		width: auto !important;
+	}
+	@media screen and (min-width: $xsScreen $xsScreen + 1px) {
+		width: 100%;
+	}
+}
+
+// Icon button on datatable row always on the right
+.change-title-btn {
+	float: right;
+}

@@ -1,0 +1,16 @@
+$xsScreen: 320px;
+
+// Data table footer styling
+.footer-container {
+	text-align: right;
+	font-family: "Roboto", sans-serif;
+	color: rgba(0, 0, 0, 0.54);
+
+	@media screen and (max-width: $xsScreen) {
+		padding: 8px;
+		font-size: 14px;
+	}
+	@media screen and (min-width: $xsScreen + 1px) {
+		font-size: 15px;
+	}
+}
