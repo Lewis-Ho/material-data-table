@@ -1,7 +1,6 @@
-var ReactDOM = require('react-dom');
-var React = require('react');
-
-var DataTable = require('./app/DataTable');
+import React from 'react';
+import ReactDOM from 'react-dom';
+import DataTable from './app/DataTable';
 
 ReactDOM.render(
     <DataTable />,

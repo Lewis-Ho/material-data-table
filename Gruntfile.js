@@ -3,6 +3,13 @@ module.exports = function(grunt) {
     // Project configuration.
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
+        sass: {
+            dist: {
+                files: {
+                    'build/stylesheets/main.css': 'src/app/stylesheets/main.scss'
+                }
+            }
+        },
         connect: {
             server: {
                 options: {
@@ -25,9 +32,11 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-react');
     grunt.loadNpmTasks('grunt-browserify');
     grunt.loadNpmTasks('grunt-contrib-connect');
+    grunt.loadNpmTasks('grunt-contrib-sass');
 
     // Default task
     grunt.registerTask('default', [
+        'sass',
         'browserify',
         'connect'
     ]);
