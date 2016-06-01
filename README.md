@@ -2,7 +2,7 @@
 
 Technical task from Fresco News, create Todo list data table based on prototype interface
 
-## RInstall Dependencies
+## Install Dependencies
 
 ```
 npm install
@@ -13,8 +13,8 @@ To install required dependencies
 ## Run on local server
 
 ```
-npm run server
+npm start
 ```
 
-Now browse to the app at http://localhost:8000/app/index.html.
+Now browse to the app at http://localhost:9000
 
